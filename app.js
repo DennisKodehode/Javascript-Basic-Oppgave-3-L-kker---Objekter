@@ -200,8 +200,20 @@ skal returnere "whao is ohe ptino tf ohis?"
 ******************************************************************************/
 
 function doubleSwap(string, charA, charB) {
-  // Skriv koden for oppgave 4 her
+  let swapped = []
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === charA){
+      swapped.push(charB)
+    }
+    else if (string[i] === charB){
+      swapped.push(charA)
+    }
+    else {swapped.push(string[i])}
+  }
+  return swapped.join("")
 }
+
+console.log(doubleSwap("what is the point of this?", "o", "t"))
 
 /******************************************************************************
 5.
